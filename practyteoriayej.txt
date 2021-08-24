@@ -1,0 +1,21 @@
+indexOf () devuelve la posición de un valor de cadena de la primera aparición de la cadena especificada.
+
+indexOf(caracter), calcula la posición en la que se encuentra el carácter indicado dentro de la cadena de texto. Si el carácter se incluye varias veces dentro de la cadena de texto, se devuelve su primera posición empezando a buscar desde la izquierda. Si la cadena no contiene el carácter, la función devuelve el valor -1:
+
+var mensaje = "Hola";
+var posicion = mensaje.indexOf('a'); // posicion = 3
+posicion = mensaje.indexOf('b');     // posicion = -1
+Su función análoga es lastIndexOf():
+
+lastIndexOf(caracter), calcula la última posición en la que se encuentra el carácter indicado dentro de la cadena de texto. Si la cadena no contiene el carácter, la función devuelve el valor -1:
+
+var mensaje = "Hola";
+var posicion = mensaje.lastIndexOf('a'); // posicion = 3
+posicion = mensaje.lastIndexOf('b');     // posicion = -1
+La función lastIndexOf() comienza su búsqueda desde el final de la cadena hacia el principio, aunque la posición devuelta es la correcta empezando a contar desde el principio de la palabra.
+
+https://uniwebsidad.com/libros/javascript/capitulo-3/funciones-y-propiedades-basicas-de-javascript
+
+https://www.javascripttutorial.net/javascript-array-indexof/
+
+push : 

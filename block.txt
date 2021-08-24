@@ -1,0 +1,602 @@
+
+TOSHIBA@IngWilson MINGW64 /d/Laboratoria/proyecto_lab3/LIM015-md-links (master)
+$ node index directorioTest
+D:\Laboratoria\proyecto_lab3\LIM015-md-links\directorioTest\animales
+D:\Laboratoria\proyecto_lab3\LIM015-md-links\directorioTest\cosas
+D:\Laboratoria\proyecto_lab3\LIM015-md-links\directorioTest\miread.md
+D:\Laboratoria\proyecto_lab3\LIM015-md-links\directorioTest\piedra.txt
+D:\Laboratoria\proyecto_lab3\LIM015-md-links\directorioTest\plantas
+D:\Laboratoria\proyecto_lab3\LIM015-md-links\directorioTest\animales\aves
+D:\Laboratoria\proyecto_lab3\LIM015-md-links\directorioTest\animales\mamiferos
+D:\Laboratoria\proyecto_lab3\LIM015-md-links\directorioTest\animales\peces
+D:\Laboratoria\proyecto_lab3\LIM015-md-links\directorioTest\cosas\miMD.md
+D:\Laboratoria\proyecto_lab3\LIM015-md-links\directorioTest\cosas\muebles
+D:\Laboratoria\proyecto_lab3\LIM015-md-links\directorioTest\cosas\otros
+D:\Laboratoria\proyecto_lab3\LIM015-md-links\directorioTest\cosas\tecnologia
+D:\Laboratoria\proyecto_lab3\LIM015-md-links\directorioTest\plantas\flores
+D:\Laboratoria\proyecto_lab3\LIM015-md-links\directorioTest\plantas\frutas
+D:\Laboratoria\proyecto_lab3\LIM015-md-links\directorioTest\plantas\hortalizas
+D:\Laboratoria\proyecto_lab3\LIM015-md-links\directorioTest\animales\aves\PATO.txt
+D:\Laboratoria\proyecto_lab3\LIM015-md-links\directorioTest\animales\aves\PAVO.txt
+D:\Laboratoria\proyecto_lab3\LIM015-md-links\directorioTest\cosas\tecnologia\COMPUTADORAS
+D:\Laboratoria\proyecto_lab3\LIM015-md-links\directorioTest\cosas\tecnologia\IOT
+D:\Laboratoria\proyecto_lab3\LIM015-md-links\directorioTest\cosas\tecnologia\MOVILES
+[ 'https://google.com/' ]
+1
+D:\Laboratoria\proyecto_lab3\LIM015-md-links\directorioTest\cosas\tecnologia\COMPUTADORAS\LAPTOP
+D:\Laboratoria\proyecto_lab3\LIM015-md-links\directorioTest\cosas\tecnologia\COMPUTADORAS\PC
+D:\Laboratoria\proyecto_lab3\LIM015-md-links\directorioTest\cosas\tecnologia\MOVILES\CELULARES
+D:\Laboratoria\proyecto_lab3\LIM015-md-links\directorioTest\cosas\tecnologia\MOVILES\TABLETS
+[
+  'https://nodejssssss.org/es/',
+  'https://user-images.githubusercontent.com/110297/42118443-b7a5f1f0-7bc8-11e8-96ad-9cc5593715a6.jpg'
+]
+2
+
+TOSHIBA@IngWilson MINGW64 /d/Laboratoria/proyecto_lab3/LIM015-md-links (master)
+$ node index directorioTest
+D:\Laboratoria\proyecto_lab3\LIM015-md-links\directorioTest\animales
+D:\Laboratoria\proyecto_lab3\LIM015-md-links\directorioTest\cosas
+D:\Laboratoria\proyecto_lab3\LIM015-md-links\directorioTest\miread.md
+D:\Laboratoria\proyecto_lab3\LIM015-md-links\directorioTest\piedra.txt
+D:\Laboratoria\proyecto_lab3\LIM015-md-links\directorioTest\plantas
+D:\Laboratoria\proyecto_lab3\LIM015-md-links\directorioTest\animales\aves
+D:\Laboratoria\proyecto_lab3\LIM015-md-links\directorioTest\animales\mamiferos
+D:\Laboratoria\proyecto_lab3\LIM015-md-links\directorioTest\animales\peces
+D:\Laboratoria\proyecto_lab3\LIM015-md-links\directorioTest\cosas\miMD.md
+D:\Laboratoria\proyecto_lab3\LIM015-md-links\directorioTest\cosas\muebles
+D:\Laboratoria\proyecto_lab3\LIM015-md-links\directorioTest\cosas\otros
+D:\Laboratoria\proyecto_lab3\LIM015-md-links\directorioTest\cosas\tecnologia
+D:\Laboratoria\proyecto_lab3\LIM015-md-links\directorioTest\plantas\flores
+D:\Laboratoria\proyecto_lab3\LIM015-md-links\directorioTest\plantas\frutas
+D:\Laboratoria\proyecto_lab3\LIM015-md-links\directorioTest\plantas\hortalizas
+D:\Laboratoria\proyecto_lab3\LIM015-md-links\directorioTest\animales\aves\PATO.txt
+D:\Laboratoria\proyecto_lab3\LIM015-md-links\directorioTest\animales\aves\PAVO.txt
+D:\Laboratoria\proyecto_lab3\LIM015-md-links\directorioTest\cosas\tecnologia\COMPUTADORAS
+D:\Laboratoria\proyecto_lab3\LIM015-md-links\directorioTest\cosas\tecnologia\IOT
+D:\Laboratoria\proyecto_lab3\LIM015-md-links\directorioTest\cosas\tecnologia\MOVILES
+[ '(https://google.com/' ]
+1
+D:\Laboratoria\proyecto_lab3\LIM015-md-links\directorioTest\cosas\tecnologia\COMPUTADORAS\LAPTOP
+D:\Laboratoria\proyecto_lab3\LIM015-md-links\directorioTest\cosas\tecnologia\COMPUTADORAS\PC
+D:\Laboratoria\proyecto_lab3\LIM015-md-links\directorioTest\cosas\tecnologia\MOVILES\CELULARES
+D:\Laboratoria\proyecto_lab3\LIM015-md-links\directorioTest\cosas\tecnologia\MOVILES\TABLETS
+[
+  '(https://nodejssssss.org/es/',
+  '(https://user-images.githubusercontent.com/110297/42118443-b7a5f1f0-7bc8-11e8-96ad-9cc5593715a6.jpg'
+]
+2
+
+TOSHIBA@IngWilson MINGW64 /d/Laboratoria/proyecto_lab3/LIM015-md-links (master)
+$ node index directorioTest
+D:\Laboratoria\proyecto_lab3\LIM015-md-links\index.js:57
+  .catch(error=>(error))
+        ^
+
+ReferenceError: fetch is not defined
+    at checkruta (D:\Laboratoria\proyecto_lab3\LIM015-md-links\index.js:57:9)
+    at D:\Laboratoria\proyecto_lab3\LIM015-md-links\index.js:50:27
+    at Array.forEach (<anonymous>)
+    at D:\Laboratoria\proyecto_lab3\LIM015-md-links\index.js:50:11
+    at FSReqCallback.readFileAfterClose [as oncomplete] (node:internal/fs/read_file_context:68:3)
+
+TOSHIBA@IngWilson MINGW64 /d/Laboratoria/proyecto_lab3/LIM015-md-links (master)
+$ node index directorioTest
+node:internal/modules/cjs/loader:944
+  throw err;
+  ^
+
+Error: Cannot find module 'fetch'
+Require stack:
+- D:\Laboratoria\proyecto_lab3\LIM015-md-links\index.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:941:15)
+    at Function.Module._load (node:internal/modules/cjs/loader:774:27)
+    at Module.require (node:internal/modules/cjs/loader:1013:19)
+    at require (node:internal/modules/cjs/helpers:93:18)
+    at Object.<anonymous> (D:\Laboratoria\proyecto_lab3\LIM015-md-links\index.js:5:15)
+    at Module._compile (node:internal/modules/cjs/loader:1109:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1138:10)
+    at Module.load (node:internal/modules/cjs/loader:989:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:829:14)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ 'D:\\Laboratoria\\proyecto_lab3\\LIM015-md-links\\index.js' ]
+}
+
+TOSHIBA@IngWilson MINGW64 /d/Laboratoria/proyecto_lab3/LIM015-md-links (master)
+$ npm i fetch
+
+added 6 packages, and audited 23 packages in 5s
+
+2 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+TOSHIBA@IngWilson MINGW64 /d/Laboratoria/proyecto_lab3/LIM015-md-links (master)
+$ node index directorioTest
+D:\Laboratoria\proyecto_lab3\LIM015-md-links\index.js:56
+  const checkruta=(ruta, link)=>fetch(link)
+                                ^
+
+TypeError: fetch is not a function
+    at checkruta (D:\Laboratoria\proyecto_lab3\LIM015-md-links\index.js:56:33)
+    at D:\Laboratoria\proyecto_lab3\LIM015-md-links\index.js:51:27
+    at Array.forEach (<anonymous>)
+    at D:\Laboratoria\proyecto_lab3\LIM015-md-links\index.js:51:11
+    at FSReqCallback.readFileAfterClose [as oncomplete] (node:internal/fs/read_file_context:68:3)
+
+TOSHIBA@IngWilson MINGW64 /d/Laboratoria/proyecto_lab3/LIM015-md-links (master)
+$ node index directorioTest
+node:internal/modules/cjs/loader:944
+  throw err;
+  ^
+
+Error: Cannot find module 'node-fetch'
+Require stack:
+- D:\Laboratoria\proyecto_lab3\LIM015-md-links\index.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:941:15)
+    at Function.Module._load (node:internal/modules/cjs/loader:774:27)
+    at Module.require (node:internal/modules/cjs/loader:1013:19)
+    at require (node:internal/modules/cjs/helpers:93:18)
+    at Object.<anonymous> (D:\Laboratoria\proyecto_lab3\LIM015-md-links\index.js:5:15)
+    at Module._compile (node:internal/modules/cjs/loader:1109:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1138:10)
+    at Module.load (node:internal/modules/cjs/loader:989:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:829:14)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ 'D:\\Laboratoria\\proyecto_lab3\\LIM015-md-links\\index.js' ]
+}
+
+TOSHIBA@IngWilson MINGW64 /d/Laboratoria/proyecto_lab3/LIM015-md-links (master)
+$ npm i node-fetch
+
+added 1 package, and audited 24 packages in 2s
+
+2 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+TOSHIBA@IngWilson MINGW64 /d/Laboratoria/proyecto_lab3/LIM015-md-links (master)
+$ node index directorioTest
+D:\Laboratoria\proyecto_lab3\LIM015-md-links\directorioTest\cosas\miMD.md https://user-images.githubusercontent.com/110297/42118443-b7a5f1f0-7bc8-11e8-96ad-9cc5593715a6.jpg 200 ok 200
+D:\Laboratoria\proyecto_lab3\LIM015-md-links\directorioTest\miread.md https://google.com/ 200 ok 200
+
+TOSHIBA@IngWilson MINGW64 /d/Laboratoria/proyecto_lab3/LIM015-md-links (master)
+$ node index
+D:\Laboratoria\proyecto_lab3\LIM015-md-links\index.js:83
+ console.log(bucarParaAtras("Dora estamos haciendo algo parecido al indexOf que nos devuelve -1 si no encuentra un texto","nos",10))
+         ^
+
+ReferenceError: bucarParaAtras is not defined
+    at Object.<anonymous> (D:\Laboratoria\proyecto_lab3\LIM015-md-links\index.js:83:10)
+?[90m    at Module._compile (node:internal/modules/cjs/loader:1109:14)?[39m
+?[90m    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1138:10)?[39m
+?[90m    at Module.load (node:internal/modules/cjs/loader:989:32)?[39m
+?[90m    at Function.Module._load (node:internal/modules/cjs/loader:829:14)?[39m
+?[90m    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)?[39m
+?[90m    at node:internal/main/run_main_module:17:47?[39m
+
+TOSHIBA@IngWilson MINGW64 /d/Laboratoria/proyecto_lab3/LIM015-md-links (master)
+$ node index
+-1
+
+TOSHIBA@IngWilson MINGW64 /d/Laboratoria/proyecto_lab3/LIM015-md-links (master)
+$ node index
+91
+-1
+
+TOSHIBA@IngWilson MINGW64 /d/Laboratoria/proyecto_lab3/LIM015-md-links (master)
+$ node index
+91
+a
+-1
+
+TOSHIBA@IngWilson MINGW64 /d/Laboratoria/proyecto_lab3/LIM015-md-links (master)
+$ node index
+61
+a
+-1
+
+TOSHIBA@IngWilson MINGW64 /d/Laboratoria/proyecto_lab3/LIM015-md-links (master)
+$ node index
+62
+s
+-1
+
+TOSHIBA@IngWilson MINGW64 /d/Laboratoria/proyecto_lab3/LIM015-md-links (master)
+$ node index
+62
+s
+1
+
+TOSHIBA@IngWilson MINGW64 /d/Laboratoria/proyecto_lab3/LIM015-md-links (master)
+$ node index
+62
+s
+-1
+
+TOSHIBA@IngWilson MINGW64 /d/Laboratoria/proyecto_lab3/LIM015-md-links (master)
+$ node index
+62
+s
+57
+
+TOSHIBA@IngWilson MINGW64 /d/Laboratoria/proyecto_lab3/LIM015-md-links (master)
+$ node index
+62
+s
+57
+57
+
+TOSHIBA@IngWilson MINGW64 /d/Laboratoria/proyecto_lab3/LIM015-md-links (master)
+$ node index directorioTest
+[ '[Node.js]' ]
+[ '', '[md-links]' ]
+
+TOSHIBA@IngWilson MINGW64 /d/Laboratoria/proyecto_lab3/LIM015-md-links (master)
+$ node index directorioTest
+[ '[Node.js]' ]
+[ 'https://google.com/' ]
+[ '', '[md-links]' ]
+[
+  'https://nodejssssss.org/es/',
+  'https://user-images.githubusercontent.com/110297/42118443-b7a5f1f0-7bc8-11e8-96ad-9cc5593715a6.jpg'
+]
+
+TOSHIBA@IngWilson MINGW64 /d/Laboratoria/proyecto_lab3/LIM015-md-links (master)
+$ node index directorioTest
+[ 'Node.js' ]
+[ '', 'md-links' ]
+
+TOSHIBA@IngWilson MINGW64 /d/Laboratoria/proyecto_lab3/LIM015-md-links (master)
+$ node index directorioTest
+[ 'Node.js' ]
+[ '', 'md-links' ]
+
+TOSHIBA@IngWilson MINGW64 /d/Laboratoria/proyecto_lab3/LIM015-md-links (master)
+$ node index directorioTest
+[ 'Nodee.js' ]
+[ '', 'md-links' ]
+
+TOSHIBA@IngWilson MINGW64 /d/Laboratoria/proyecto_lab3/LIM015-md-links (master)
+$ node index directorioTest
+[ 'Nodee.js' ]
+[ '', 'md-links' ]
+
+TOSHIBA@IngWilson MINGW64 /d/Laboratoria/proyecto_lab3/LIM015-md-links (master)
+$ node index
+D:\Laboratoria\proyecto_lab3\LIM015-md-links\index.js:80
+ openFile(" D:\\Laboratoria\\proyecto_lab3\\LIM015-md-links\\directorioTest\\cosas\\miMD.md")
+ ^
+
+ReferenceError: openFile is not defined
+    at Object.<anonymous> (D:\Laboratoria\proyecto_lab3\LIM015-md-links\index.js:80:2)
+    at Module._compile (node:internal/modules/cjs/loader:1109:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1138:10)
+    at Module.load (node:internal/modules/cjs/loader:989:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:829:14)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)
+    at node:internal/main/run_main_module:17:47
+
+TOSHIBA@IngWilson MINGW64 /d/Laboratoria/proyecto_lab3/LIM015-md-links (master)
+$ node index
+D:\Laboratoria\proyecto_lab3\LIM015-md-links\index.js:80
+ openFile("D:\\Laboratoria\\proyecto_lab3\\LIM015-md-links\\directorioTest\\cosas\\miMD.md")
+ ^
+
+ReferenceError: openFile is not defined
+    at Object.<anonymous> (D:\Laboratoria\proyecto_lab3\LIM015-md-links\index.js:80:2)
+    at Module._compile (node:internal/modules/cjs/loader:1109:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1138:10)
+    at Module.load (node:internal/modules/cjs/loader:989:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:829:14)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)
+    at node:internal/main/run_main_module:17:47
+
+TOSHIBA@IngWilson MINGW64 /d/Laboratoria/proyecto_lab3/LIM015-md-links (master)
+$ node index
+[ '', 'md-links' ]
+
+TOSHIBA@IngWilson MINGW64 /d/Laboratoria/proyecto_lab3/LIM015-md-links (master)
+$ node index
+#este es una prueba
+[Noode.js](https://nodejssssss.org/es/)
+
+![md-links](https://user-images.githubusercontent.com/110297/42118443-b7a5f1f0-7bc8-11e8-96ad-9cc5593715a6.jpg)
+[ '', 'md-links' ]
+
+TOSHIBA@IngWilson MINGW64 /d/Laboratoria/proyecto_lab3/LIM015-md-links (master)
+$ node index
+#este es una prueba
+[Noode.js](https://nodejssssss.org/es/)
+
+![md-links](https://user-images.githubusercontent.com/110297/42118443-b7a5f1f0-7bc8-11e8-96ad-9cc5593715a6.jpg)
+66   30
+66   74
+[ '', 'md-links' ]
+
+TOSHIBA@IngWilson MINGW64 /d/Laboratoria/proyecto_lab3/LIM015-md-links (master)
+$ node index
+#este es una prueba
+[Noode.js](https://nodejssssss.org/es/)
+
+![md-links](https://user-images.githubusercontent.com/110297/42118443-b7a5f1f0-7bc8-11e8-96ad-9cc5593715a6.jpg)
+35   30
+0   74
+[ '', 'md-links' ]
+
+TOSHIBA@IngWilson MINGW64 /d/Laboratoria/proyecto_lab3/LIM015-md-links (master)
+$ node index
+#este es una prueba
+[Noode.js](https://nodejssssss.org/es/)
+
+![md-links](https://user-images.githubusercontent.com/110297/42118443-b7a5f1f0-7bc8-11e8-96ad-9cc5593715a6.jpg)
+36   30
+0   74
+[ '', 'md-links' ]
+
+TOSHIBA@IngWilson MINGW64 /d/Laboratoria/proyecto_lab3/LIM015-md-links (master)
+$ node index
+#este es una prueba
+[Noode.js](https://nodejssssss.org/es/)
+
+![md-links](https://user-images.githubusercontent.com/110297/42118443-b7a5f1f0-7bc8-11e8-96ad-9cc5593715a6.jpg)
+36   30
+0   74
+[
+  '',
+  '#este es una prueba\r\n[Noode.js](https://nodejssssss.org/es/)\r\n\r\n![md-links'
+]
+
+TOSHIBA@IngWilson MINGW64 /d/Laboratoria/proyecto_lab3/LIM015-md-links (master)
+$ node index
+#este es una prueba
+[Noode.js](https://nodejssssss.org/es/)
+
+![md-links](https://user-images.githubusercontent.com/110297/42118443-b7a5f1f0-7bc8-11e8-96ad-9cc5593715a6.jpg)
+36   30
+0   74
+[
+  '',
+  '#este es una prueba\r\n[Noode.js](https://nodejssssss.org/es/)\r\n\r\n![md-links'
+]
+
+TOSHIBA@IngWilson MINGW64 /d/Laboratoria/proyecto_lab3/LIM015-md-links (master)
+$ node index
+#este es una prueba
+[Noode.js](https://nodejssssss.org/es/)
+
+![md-links](https://user-images.githubusercontent.com/110297/42118443-b7a5f1f0-7bc8-11e8-96ad-9cc5593715a6.jpg)
+](https://nodejssssss.org/es/)
+
+![md-links](https://user-images.githubusercontent.com/110297/42118443-b7a5f1f0-7bc8-11e8-96ad-9cc5593715a6.jpg)
+36   30
+](https://user-images.githubusercontent.com/110297/42118443-b7a5f1f0-7bc8-11e8-96ad-9cc5593715a6.jpg)
+0   74
+[ '', 'md-links' ]
+
+TOSHIBA@IngWilson MINGW64 /d/Laboratoria/proyecto_lab3/LIM015-md-links (master)
+$ node index
+#este es una prueba
+[Noode.js](https://nodejssssss.org/es/)
+
+![md-links](https://user-images.githubusercontent.com/110297/42118443-b7a5f1f0-7bc8-11e8-96ad-9cc5593715a6.jpg)
+](https://nodejssssss.org/es/)
+
+![md-links](https://user-images.githubusercontent.com/110297/42118443-b7a5f1f0-7bc8-11e8-96ad-9cc5593715a6.jpg) 31
+36   30
+](https://user-images.githubusercontent.com/110297/42118443-b7a5f1f0-7bc8-11e8-96ad-9cc5593715a6.jpg) 75
+0   74
+[ '', 'md-links' ]
+
+TOSHIBA@IngWilson MINGW64 /d/Laboratoria/proyecto_lab3/LIM015-md-links (master)
+$ node index
+#este es una prueba
+[Noode.js](https://nodejssssss.org/es/)
+
+![md-links](https://user-images.githubusercontent.com/110297/42118443-b7a5f1f0-7bc8-11e8-96ad-9cc5593715a6.jpg)
+----------------
+#este es una prueba
+[Noode.js](https://nodejssssss.org/es/)
+
+![md-links](https://user-images.githubusercontent.com/110297/42118443-b7a5f1f0-7bc8-11e8-96ad-9cc5593715a6.jpg)
+-----------
+](https://nodejssssss.org/es/)
+
+![md-links](https://user-images.githubusercontent.com/110297/42118443-b7a5f1f0-7bc8-11e8-96ad-9cc5593715a6.jpg) 31
+36   30
+----------------
+#este es una prueba
+[Noode.js](https://nodejssssss.org/es/)
+
+![md-links](https://user-images.githubusercontent.com/110297/42118443-b7a5f1f0-7bc8-11e8-96ad-9cc5593715a6.jpg)
+-----------
+](https://user-images.githubusercontent.com/110297/42118443-b7a5f1f0-7bc8-11e8-96ad-9cc5593715a6.jpg) 75
+0   74
+[ '', 'md-links' ]
+
+TOSHIBA@IngWilson MINGW64 /d/Laboratoria/proyecto_lab3/LIM015-md-links (master)
+$ node index
+#este es una prueba
+[Noode.js](https://nodejssssss.org/es/)
+
+![md-links](https://user-images.githubusercontent.com/110297/42118443-b7a5f1f0-7bc8-11e8-96ad-9cc5593715a6.jpg)
+----------------
+#este es una prueba
+[Noode.js](https://nodejssssss.org/es/)
+
+![md-links](https://user-images.githubusercontent.com/110297/42118443-b7a5f1f0-7bc8-11e8-96ad-9cc5593715a6.jpg)
+-----------
+#este es una prueba
+[Noode.js 31
+36   30
+----------------
+#este es una prueba
+[Noode.js](https://nodejssssss.org/es/)
+
+![md-links](https://user-images.githubusercontent.com/110297/42118443-b7a5f1f0-7bc8-11e8-96ad-9cc5593715a6.jpg)
+-----------
+#este es una prueba
+[Noode.js](https://nodejssssss.org/es/)
+
+![md-links 75
+0   74
+[ 'Noode.js', 'md-links' ]
+
+TOSHIBA@IngWilson MINGW64 /d/Laboratoria/proyecto_lab3/LIM015-md-links (master)
+$ node index
+#este es una prueba
+[Noode.js](https://nodejssssss.org/es/)
+
+![md-links](https://user-images.githubusercontent.com/110297/42118443-b7a5f1f0-7bc8-11e8-96ad-9cc5593715a6.jpg)
+[ 'Noode.js', 'md-links' ]
+
+TOSHIBA@IngWilson MINGW64 /d/Laboratoria/proyecto_lab3/LIM015-md-links (master)
+$ node index
+[ 'Noode.js', 'md-links' ]
+
+TOSHIBA@IngWilson MINGW64 /d/Laboratoria/proyecto_lab3/LIM015-md-links (master)
+$ node index directorioTest
+D:\Laboratoria\proyecto_lab3\LIM015-md-links\directorioTest\cosas\miMD.md https://user-images.githubusercontent.com/110297/42118443-b7a5f1f0-7bc8-11e8-96ad-9cc5593715a6.jpg md-links 200 ok 200
+
+TOSHIBA@IngWilson MINGW64 /d/Laboratoria/proyecto_lab3/LIM015-md-links (master)
+$ node index directorioTest
+D:\Laboratoria\proyecto_lab3\LIM015-md-links\directorioTest\cosas\miMD.md https://user-images.githubusercontent.com/110297/42118443-b7a5f1f0-7bc8-11e8-96ad-9cc5593715a6.jpg md-links 200 ok 200
+D:\Laboratoria\proyecto_lab3\LIM015-md-links\directorioTest\miread.md https://google.com/ Nodee.js 200 ok 200
+
+TOSHIBA@IngWilson MINGW64 /d/Laboratoria/proyecto_lab3/LIM015-md-links (master)
+$ node index directorioTest
+0 Noode.js
+1 md-links
+D:\Laboratoria\proyecto_lab3\LIM015-md-links\directorioTest\cosas\miMD.md https://user-images.githubusercontent.com/110297/42118443-b7a5f1f0-7bc8-11e8-96ad-9cc5593715a6.jpg md-links 200 ok 200
+
+TOSHIBA@IngWilson MINGW64 /d/Laboratoria/proyecto_lab3/LIM015-md-links (master)
+$ node index directorioTest
+0 Noode.js
+1 md-links
+D:\Laboratoria\proyecto_lab3\LIM015-md-links\directorioTest\cosas\miMD.md https://user-images.githubusercontent.com/110297/42118443-b7a5f1f0-7bc8-11e8-96ad-9cc5593715a6.jpg md-links 200 ok 200
+D:\Laboratoria\proyecto_lab3\LIM015-md-links\directorioTest\cosas\miMD.md https://nodejs.org/es/ Noode.js 200 ok 200
+
+TOSHIBA@IngWilson MINGW64 /d/Laboratoria/proyecto_lab3/LIM015-md-links (master)
+$ node index directorioTest
+D:\Laboratoria\proyecto_lab3\LIM015-md-links\index.js:63
+  .catch(error=>console.log(ruta,link, "fail 404");)
+                                                 ^
+
+SyntaxError: missing ) after argument list
+?[90m    at Object.compileFunction (node:vm:355:18)?[39m
+?[90m    at wrapSafe (node:internal/modules/cjs/loader:1039:15)?[39m
+?[90m    at Module._compile (node:internal/modules/cjs/loader:1073:27)?[39m
+?[90m    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1138:10)?[39m
+?[90m    at Module.load (node:internal/modules/cjs/loader:989:32)?[39m
+?[90m    at Function.Module._load (node:internal/modules/cjs/loader:829:14)?[39m
+?[90m    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)?[39m
+?[90m    at node:internal/main/run_main_module:17:47?[39m
+
+TOSHIBA@IngWilson MINGW64 /d/Laboratoria/proyecto_lab3/LIM015-md-links (master)
+$ node index directorioTest
+0 Nodee.js
+0 Noode.js
+1 md-links
+D:\Laboratoria\proyecto_lab3\LIM015-md-links\directorioTest\cosas\miMD.md https://nodeeeejs.org/es/ fail 404
+D:\Laboratoria\proyecto_lab3\LIM015-md-links\directorioTest\cosas\miMD.md https://user-images.githubusercontent.com/110297/42118443-b7a5f1f0-7bc8-11e8-96ad-9cc5593715a6.jpg md-links 200 ok 200
+D:\Laboratoria\proyecto_lab3\LIM015-md-links\directorioTest\miread.md https://google.com/ Nodee.js 200 ok 200
+
+TOSHIBA@IngWilson MINGW64 /d/Laboratoria/proyecto_lab3/LIM015-md-links (master)
+$ node index directorioTest
+D:\Laboratoria\proyecto_lab3\LIM015-md-links\directorioTest\cosas\miMD.md https://nodeeeejs.org/es/ fail 404
+D:\Laboratoria\proyecto_lab3\LIM015-md-links\directorioTest\cosas\miMD.md https://user-images.githubusercontent.com/110297/42118443-b7a5f1f0-7bc8-11e8-96ad-9cc5593715a6.jpg md-links 200 ok 200
+D:\Laboratoria\proyecto_lab3\LIM015-md-links\directorioTest\miread.md https://google.com/ Nodee.js 200 ok 200
+
+TOSHIBA@IngWilson MINGW64 /d/Laboratoria/proyecto_lab3/LIM015-md-links (master)
+$ node index directorioTest
+{
+  _: [ 'directorioTest' ],
+  s: false,
+  status: false,
+  v: false,
+  validate: false,
+  '$0': 'index'
+}
+
+TOSHIBA@IngWilson MINGW64 /d/Laboratoria/proyecto_lab3/LIM015-md-links (master)
+$ node index directorioTest
+D:\Laboratoria\proyecto_lab3\LIM015-md-links\index.js:68
+            console.log(ruta,link,text)
+                                  ^
+
+ReferenceError: text is not defined
+    at D:\Laboratoria\proyecto_lab3\LIM015-md-links\index.js:68:35
+    at Array.forEach (<anonymous>)
+    at D:\Laboratoria\proyecto_lab3\LIM015-md-links\index.js:64:11
+    at FSReqCallback.readFileAfterClose [as oncomplete] (node:internal/fs/read_file_context:68:3)
+
+TOSHIBA@IngWilson MINGW64 /d/Laboratoria/proyecto_lab3/LIM015-md-links (master)
+$ node index directorioTest
+D:\Laboratoria\proyecto_lab3\LIM015-md-links\directorioTest\miread.md https://google.com/ Nodee.js
+D:\Laboratoria\proyecto_lab3\LIM015-md-links\directorioTest\cosas\miMD.md https://nodeeeejs.org/es/ Noode.js
+D:\Laboratoria\proyecto_lab3\LIM015-md-links\directorioTest\cosas\miMD.md https://user-images.githubusercontent.com/110297/42118443-b7a5f1f0-7bc8-11e8-96ad-9cc5593715a6.jpg md-links
+
+TOSHIBA@IngWilson MINGW64 /d/Laboratoria/proyecto_lab3/LIM015-md-links (master)
+$ node index directorioTest --validate
+D:\Laboratoria\proyecto_lab3\LIM015-md-links\directorioTest\cosas\miMD.md https://nodeeeejs.org/es/ fail 404
+D:\Laboratoria\proyecto_lab3\LIM015-md-links\directorioTest\cosas\miMD.md https://user-images.githubusercontent.com/110297/42118443-b7a5f1f0-7bc8-11e8-96ad-9cc5593715a6.jpg md-links 200 ok 200
+D:\Laboratoria\proyecto_lab3\LIM015-md-links\directorioTest\miread.md https://google.com/ Nodee.js 200 ok 200
+
+TOSHIBA@IngWilson MINGW64 /d/Laboratoria/proyecto_lab3/LIM015-md-links (master)
+$ node index directorioTest --validate
+D:\Laboratoria\proyecto_lab3\LIM015-md-links\index.js:100
+checkFile(isAbsolute(argumento._[0])).then(console.log(cuentarutas,"fin"));
+                                     ^
+
+TypeError: Cannot read property 'then' of undefined
+    at Object.<anonymous> (D:\Laboratoria\proyecto_lab3\LIM015-md-links\index.js:100:38)
+    at Module._compile (node:internal/modules/cjs/loader:1109:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1138:10)
+    at Module.load (node:internal/modules/cjs/loader:989:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:829:14)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)
+    at node:internal/main/run_main_module:17:47
+
+TOSHIBA@IngWilson MINGW64 /d/Laboratoria/proyecto_lab3/LIM015-md-links (master)
+$ node index directorioTest --validate
+Total
+D:\Laboratoria\proyecto_lab3\LIM015-md-links\directorioTest\cosas\miMD.md https://nodeeeejs.org/es/ fail 404
+D:\Laboratoria\proyecto_lab3\LIM015-md-links\directorioTest\cosas\miMD.md https://nodeeeejs.org/es/ fail 404
+D:\Laboratoria\proyecto_lab3\LIM015-md-links\directorioTest\cosas\miMD.md https://user-images.githubusercontent.com/110297/42118443-b7a5f1f0-7bc8-11e8-96ad-9cc5593715a6.jpg md-links 200 ok 200
+D:\Laboratoria\proyecto_lab3\LIM015-md-links\directorioTest\miread.md https://google.com/ Nodee.js 200 ok 200
+
+TOSHIBA@IngWilson MINGW64 /d/Laboratoria/proyecto_lab3/LIM015-md-links (master)
+$ node index directorioTest --validate
+D:\Laboratoria\proyecto_lab3\LIM015-md-links\directorioTest\cosas\miMD.md https://nodeeeejs.org/es/ fail 404
+D:\Laboratoria\proyecto_lab3\LIM015-md-links\directorioTest\cosas\miMD.md https://nodeeeejs.org/es/ fail 404
+D:\Laboratoria\proyecto_lab3\LIM015-md-links\directorioTest\cosas\miMD.md https://user-images.githubusercontent.com/110297/42118443-b7a5f1f0-7bc8-11e8-96ad-9cc5593715a6.jpg md-links 200 ok 200
+D:\Laboratoria\proyecto_lab3\LIM015-md-links\directorioTest\miread.md https://google.com/ Nodee.js 200 ok 200
+
+TOSHIBA@IngWilson MINGW64 /d/Laboratoria/proyecto_lab3/LIM015-md-links (master)
+$ node index directorioTest --validate
+D:\Laboratoria\proyecto_lab3\LIM015-md-links\directorioTest\cosas\miMD.md https://nodeeeejs.org/es/ fail 404/ fail 404                                                                                        / fail 404
+D:\Laboratoria\proyecto_lab3\LIM015-md-links\directorioTest\cosas\miMD.md https://nodeeeejs.org/esubusercontent.com/110297/42118443-/ fail 404
+D:\Laboratoria\proyecto_lab3\LIM015-md-links\directorioTest\cosas\miMD.md https://user-images.gith 200 ok 200ubusercontent.com/110297/42118443-b7a5f1f0-7bc8-11e8-96ad-9cc5593715a6.jpg md-links 200 ok 200
+D:\Laboratoria\proyecto_lab3\LIM015-md-links\directorioTest\miread.md https://google.com/ Nodee.js 200 ok 200
+
+TOSHIBA@IngWilson MINGW64 /d/Laboratoria/proyecto_lab3/LIM015-md-links (master)
+$ node index directorioTest
+D:\Laboratoria\proyecto_lab3\LIM015-md-links\directorioTest\miread.md https://google.com/ Nodee.js
+D:\Laboratoria\proyecto_lab3\LIM015-md-links\directorioTest\cosas\miMD.md https://nodeeeejs.org/es/ Noode.js
+D:\Laboratoria\proyecto_lab3\LIM015-md-links\directorioTest\cosas\miMD.md https://user-images.githubusercontent.com/110297/42118443-b7a5f1f0-7bc8-11e8-96ad-9cc5593715a6.jpg md-links
+D:\Laboratoria\proyecto_lab3\LIM015-md-links\directorioTest\cosas\miMD.md https://nodeeeejs.org/es/ Noode.js
+
+TOSHIBA@IngWilson MINGW64 /d/Laboratoria/proyecto_lab3/LIM015-md-links (master)
+
+========================================================
+       console.log(buscarLinksAndTexts(`
+        #este es una prueba
+[Noode.js](https://nodeeeejs.org/es/)
+
+![md-links](https://user-images.githubusercontent.com/110297/42118443-b7a5f1f0-7bc8-11e8-96ad-9cc5593715a6.jpg)
+
+[Noode.js](https://nodeeeejs.org/es/)`))

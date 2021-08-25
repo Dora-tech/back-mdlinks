@@ -1,18 +1,3 @@
-//importar libreria de esta ruta
-//const argumento=process.argv;
-//validate, stats y unique
-const argumento =  require('yargs') 
-                    .option('s',{
-                    alias:'stats',
-                    type:'boolean',
-                    default:false,
-                    })
-                    .option('v',{
-                    alias:'validate',
-                    type:'boolean',
-                    default:false,
-                    })
-                    .argv
 //El path módulo proporciona utilidades para trabajar con rutas de archivos y directorios. 
 const path = require('path') 
 // fs es el módulo del sistema de archivos Node.js le permite trabajar con el sistema de archivos en su computadora.
@@ -20,183 +5,188 @@ const fs = require('fs');
 const fetch = require("node-fetch");
 //-----------------------------------
 
-const isAbsolute=(ruta)=>{
-    if(path.isAbsolute(ruta))
-      //console.log("es una ruta absoluta")
-      return ruta
-    else
-     // console.log("no es una ruta absoluta");
-     return path.resolve(ruta)
-  }
- //console.log(isAbsolute(argumento._[0]));
-  /**
-   D:\\Laboratoria\\proyecto_lab3\\LIM015-md-links\\indextest.js 
-   */
-//-----------------------
-  const checkRutaAndFile=(ruta)=>new Promise((resolve,reject)=>fs.stat(ruta, (err, data) => {
-    //voy a verificar si existe o no la ruta
-    if (err) {
-      reject("rutaNoExiste")
-      return
-    }
-    
-    // console.log(data)
-    // console.log(err)
-    //si es que existe la ruta
-    //voy a verificar si es un archivo o carpeta
-    if(data.isFile())
-    //es un archivo
-      resolve([true,ruta])
-    else
-    //es un directorio
-      resolve([false,ruta])
-    //console.log(data);
-  }))
 
-//-------------------------------
-  let cuentaBroken=0;
-
-  const OpenFileMD=(ruta)=>fs.readFile(ruta, 'utf8' , (err, data) => {
-    if (err) {
-      console.error(err)
-      return
-    }
-    let {links,texts}=buscarLinksAndTexts(data);
-    let rutasCheckear=[];
-    //true && !false
-    if(argumento.stats && !argumento.validate) console.log("Total", links.length)
-    else{
-    links.forEach((link,index)=>{
-        if(argumento.validate)
-            rutasCheckear.push(checkruta(ruta,link,texts[index],argumento.stats))
-        else
-            {
-                console.log(ruta,link,texts[index])
-               
-            }
+let LeerArchivo=(ruta,options)=>new Promise((resolve,reject)=>{
+    if(path.extname(ruta)===".md")
+    fs.readFile(ruta, 'utf8', (err, data) => {
+      if (err) {
+        console.error(err)
+        return
+      }    
+      let midata = buscarLinksAndTexts(data)
+      midata.file = ruta;
+      if (!(options.validate || options.stats))
+        resolve(midata)
+      else if (!options.validate && options.stats) {
+        //transformamos el arreglo en un conjunto para evitar repeticiones
+        let linksSet = new Set(midata.href.map(item => item));
+        midata.total = midata.href.length;
+        midata.unique = linksSet.size;
+        resolve(midata);
+      }
+      else if (options.validate && !options.stats) {
+        let rutasCheckear = [];
+        midata.href.forEach((href) => rutasCheckear.push(checkruta(href)))
+        Promise.all(rutasCheckear)
+          .then(res => {
+            let status = [];
+            let ok = [];
+            console.log(res)
+            res.forEach((oneResponse) => {
+              status.push(oneResponse[1])
+              ok.push(oneResponse[0] == 1 ? "fail" : "ok")
+            })
+            midata.status = status;
+            midata.ok = ok;
+            resolve(midata);
+          })
+          .catch(err => console.log(err))
+      }
+      else {
+        let rutasCheckear = [];
+        midata.href.forEach((href) => rutasCheckear.push(checkruta(href)))
+        Promise.all(rutasCheckear)
+          .then(res => {
+            let status = [];
+            let ok = [];
+            midata.broken = 0;
+            res.forEach((oneResponse) => {
+              status.push(oneResponse[1])
+              ok.push(oneResponse[0] == 1 ? "fail" : "ok")
+              midata.broken += oneResponse[0]
+            })
+            midata.status = status;
+            midata.ok = ok;
+            let linksSet = new Set(midata.href.map(item => item));
+            midata.total = midata.href.length;
+            midata.unique = linksSet.size;
+            resolve(midata);
+          })
+          .catch(err => console.log(err))
+      }
     })
-    let cuentarutas=0;   
-    if(argumento.validate) 
-    Promise.all(rutasCheckear)
-        .then(res => {
-            if(argumento.stats) {
-                console.log("Total:",links.length)
-               
-                const total = res.reduce((p, c) => p + c);
-                console.log("Broken:",total)
-            }
-           })
-        .catch(err => console.log(err))
-        }
-    //console.log(texts)
-    //console.log(links)
-  })
-
-  //----------------------
-  // 
-  const checkruta=(ruta, link,text,stats)=>new Promise((resolve,reject)=>fetch(link)
-  .then(res=>{
-      if(!stats)
-      //? condicion y : else
-            {console.log(ruta,link,text,res.status==404?"fail 404":"ok "+ 200)
-            resolve(0)
-        }
-        else if(res.status==404)
-                resolve(1)
-            else resolve(0)})
-  .catch(error=>{
-    if(!stats)  
-        
+    else
     {
-        console.log(ruta,link,text, "fail 404")
-        resolve(0)
+      let midata = {}
+      midata.file = "error";
+      resolve(midata)
+    }  
+  })
+  
+
+  
+  const isAbsolute=(ruta)=>{
+      if(path.isAbsolute(ruta))
+        //console.log("es una ruta absoluta")
+        return ruta
+      else
+       // console.log("no es una ruta absoluta");
+       return path.resolve(ruta)
     }
-    else                
-                    resolve(1)
-                    }))
-//------------------------
-//le envio un string y devuelve los links que son http de ese string y tambien los texts
-  let buscarLinksAndTexts=(data)=>{
+  
+    const checkRutaAndFile=(ruta)=>new Promise((resolve,reject)=>fs.stat(ruta, (err, data) => {
+      //voy a verificar si existe o no la ruta
+      if (err) {
+        reject("rutaNoExiste")
+        return
+      }
+       //si es que existe la ruta
+      //voy a verificar si es un archivo o carpeta
+      if(data.isFile())
+      //es un archivo
+        resolve([true,ruta])
+      else
+      //es un directorio
+        resolve([false,ruta])
+    }))
+  
+
+  
+    const getAllFiles = (dirPath, arrayOfFiles)=> {
+      files = fs.readdirSync(dirPath)  
+      arrayOfFiles = arrayOfFiles || []  
+      files.forEach((file) =>{
+        if (fs.statSync(dirPath + "/" + file).isDirectory()) {
+          arrayOfFiles = getAllFiles(dirPath + "/" + file, arrayOfFiles)
+        } else {
+          arrayOfFiles.push(path.join( dirPath, "/", file))
+        }
+      })  
+      
+      return arrayOfFiles
+    }
+////
+const checkruta = (href) => new Promise((resolve, reject) => fetch(href)
+.then(res => {     
+    res.status == 404 ? resolve([1,"404"]) : resolve([0,""+res.status])      
+  }    
+)
+.catch(error => {
+  resolve([1,"404"])
+}))
+
+let buscarLinksAndTexts=(data)=>{
     let posicion= data.indexOf("(http");
-    let links=[];
-    let texts=[];
+    let href=[];
+    let text=[];
     let posfinal=0;
     // y mientras tengas una posición mayor o igual que 0,
     // (recuerda que -1 significa que no lo encontró)
     while (posicion >= 0) {   
-        texts.push(data.slice(data.slice(0,posicion-1).lastIndexOf("[")+1,posicion-1))
+        text.push(data.slice(data.slice(0,posicion-1).lastIndexOf("[")+1,posicion-1))
         posfinal=data.indexOf(")",posicion);
-        links.push(data.slice(posicion+1,posfinal)) ;
+        href.push(data.slice(posicion+1,posfinal)) ;
         // busca la siguiente ocurrencia de la palabra
         posicion = data.indexOf("(http",posicion+1);
     }
-    return {links,texts};
+    return {href,text};
   }
 
-//----------------
-//lea directorio
-  const openDirectory=(ruta)=>fs.readdir(ruta, 'utf8' , (err, data) => {
-    if (err) {
-      console.error("ruta no existe3")
-      return
-    }
-    if(data.length>0)
-      {
-        data.forEach((elemento)=>{
-       
-            checkRutaAndFile(`${ruta}\\${elemento}`)
-                .then((res)=>buscarAbrirArchivosMD(res[0],res[1]))  
-        }) 
-  
-      }
-      else return
-      //console.log(data)
-  }) 
-  //-----------------------------------------
 
-let buscarAbrirArchivosMD=(isfile,ruta)=>{
-    if(isfile){
-      //es un archivo md
-       //path.extname () devuelve la extensión del path, desde la última aparición del carácter .(punto)  (ejemplo .js , .txt)
-        if(path.extname(ruta)===".md")
-        //Buscar links
-            OpenFileMD(ruta)
-            //no hacer nada
-        else return
-    }
-    //abrimos el directorio y vamos a seguir buscando archivos en forma recursiva
-    else openDirectory(ruta)
-}
+//console.log(isAbsolute("D:\\Laboratoria\\dorina\\LIM015-md-links\\directoriotest"))
+//console.log(isAbsolute("patolucas"))
 
-//console.log(buscarAbrirArchivosMD(argumento._[0]))
-//console.log(checkRutaAndFile(argumento._[0]))
-//console.log(isAbsolute(argumento._[0]))
-//---------------------
+/* checkRutaAndFile("D:\\Laboratoria\\dorina\\LIM015-md-links\\dora")
+      .then((res)=>console.log(res))
+      .catch((err)=>console.log(err)) */
 
-//isAbsolute(argumento._[0])
-  checkRutaAndFile(isAbsolute(argumento._[0]))
-         .then((res)=>buscarAbrirArchivosMD(res[0],res[1]))
-        .catch((error)=>console.log(error))
-//--stats argumento.stats es true si no esta es false
-//console.log(argumento)
-//-------------------------
+/* console.log(buscarLinksAndTexts(`#este es una prueba
+#dentro de text de texto dentro de
+[Noode.js](https://nodeeeejs.org/es/)
 
+![md-links](https://user-images.githubusercontent.com/110297/42118443-b7a5f1f0-7bc8-11e8-96ad-9cc5593715a6.jpg)
 
-/**
- * 
- */
+[Noode.js](https://nodeeeejs.org/es/)`)) */
 
+//validate false y stats false
+/* LeerArchivo("D:\\Laboratoria\\dorina\\LIM015-md-links\\mimd.md",{validate:false,stats:false})
+  .then((res)=>console.log(res))
+  .catch((err)=>console.log(err)) */
+  //validate false y stats true
+/* LeerArchivo("D:\\Laboratoria\\dorina\\LIM015-md-links\\mimd.md",{validate:false,stats:true})
+  .then((res)=>console.log(res))
+  .catch((err)=>console.log(err)) */
 
-//=============================================
-        /*   if(path.extname(ruta)===".md")
-  OpenFile(ruta)
-else return
+    //validate true y stats false
+/* LeerArchivo("D:\\Laboratoria\\dorina\\LIM015-md-links\\mimd.md",{validate:true,stats:false})
+  .then((res)=>console.log(res))
+  .catch((err)=>console.log(err)) */
 
-else        
-openDirectory(ruta) */
-//console.log( argumento)
- //D:\\Laboratoria\\proyecto_lab3\\LIM015-md-links\\directorioTest\\cosas\\miMD.md
+      //validate true y stats true
+/* LeerArchivo("D:\\Laboratoria\\dorina\\LIM015-md-links\\mimd.md",{validate:true,stats:true})
+  .then((res)=>console.log(res))
+  .catch((err)=>console.log(err)) */
 
- //OpenFile("D:\\Laboratoria\\proyecto_lab3\\LIM015-md-links\\directorioTest\\cosas\\miMD.md")
+/* checkruta("https://facebooooookkkkk.com//dorina//wilson")
+  .then((res)=>console.log(res)) */
 
-//El método path.extname () devuelve la extensión de la ruta, desde la última aparición de. carácter (punto) hasta el final de la cadena en la última parte de la ruta.
+ // console.log(getAllFiles("D:\\Laboratoria\\dorina\\LIM015-md-links\\directoriotest"))
+////
+    module.exports = {
+        LeerArchivo, 
+        checkruta,
+        isAbsolute, 
+        checkRutaAndFile,
+        buscarLinksAndTexts, 
+        getAllFiles,
+    }; 

@@ -18,4 +18,99 @@ https://uniwebsidad.com/libros/javascript/capitulo-3/funciones-y-propiedades-bas
 
 https://www.javascripttutorial.net/javascript-array-indexof/
 
-push : 
+
+
+//metodo reduce:
+     ejecuta una funcion reductora sobre cada elemento de un array, y acumular el resultado en un valor de salida             
+ejemplo:
+
+const array1 = [1, 2, 3, 4];
+const reducer = (accumulator, currentValue) => accumulator + currentValue;
+
+// 1 + 2 + 3 + 4
+console.log(array1.reduce(reducer));
+// expected output: 10
+
+// 5 + 1 + 2 + 3 + 4
+console.log(array1.reduce(reducer, 5));
+// expected output: 15
+
+https://medium.com/@xadrijo/un-vistazo-a-la-funci%C3%B3n-reduce-en-javascript-f4459bc4e3aa
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce
+https://scriptkiddierror404.wordpress.com/2019/07/23/ejemplos-del-metodo-reduce-javascript-en-profundidad/
+
+SET: 
+El objeto Set permite almacenar valores únicos de cualquier tipo, incluso valores primitivos u referencias a objetos.
+(QUE NO SE REPITE )
+
+un Set de datos es una colección de valores únicos en Javascript
+
+
+OJO
+https://www.etnassoft.com/2016/09/13/el-objeto-set-en-javascript-los-nuevos-arrays-en-es6-teoria-ejemplos-y-rendimiento-comparado/
+
+https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Set
+https://medium.com/laboratoria-developers/sets-en-javascript-3388920f7cea
+
+La propiedad size:
+La propiedad size, tal y como su nombre sugiere, permite obtener el número de elementos que componen un conjunto dado.
+
+La sizepropiedad del descriptor de acceso devuelve el número de elementos (únicos) en un Setobjeto.
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set/size
+
+https://developer.mozilla.org/es/docs/Glossary/Primitive
+
+Primitivo
+En JavaScript, un primitive (valor primitivo, tipo de dato primitivo) son datos que no son un objeto y no tienen métodos.
+Hay 6 tipos de datos primitivos: string, number, bigint, boolean , undefined y symbol. También hay null, que aparentemente es primitivo,
+ pero de hecho es un caso especial para cada Object: 
+y cualquier tipo estructurado se deriva de null por la Cadena de prototipos.
+
+FETCH -> es una peticion y response (lo que envia el datos y lo devuelve). lado de frontend y backend ( unico fetch)
+programo una promesa
+
+* Fetch es un sistema mas moderno, basado en promesas de javascript, para realizar peticiones HTTP asincronas, 
+utilizando promesas y de forma que el código sea un poco más sencillo, legible y comoda...
+ 
+Fetch ofrece una nueva interfaz estándar de uso de Ajax para el desarrollo frontend, a la vez que permite usar promesas, 
+que nos facilitan la organización del código asíncrono en las aplicaciones. 
+Es un mecanismo disponible actualmente en todos los navegadores, exceptuando los viejos Internet Explorer.
+
+ es moderna, es una peticiones asincronas, crea y usando una promesa, usando una libreria,...
+ ya esta creado collback, usando collback, y tratar no crear y 
+
+un nuevo estándar para realizar solicitudes de servidor con promesas,
+
+que permite hacer llamadas HTTP
+
+Una de las características más importantes del API fetch es que utiliza promesas, es decir, 
+devuelve un objeto con dos métodos, uno then() y otro catch()
+ a la que pasaremos una función que será invocada cuando se obtenga la respuesta o se produzca un error.
+
+ Aquí hay que aclarar un punto con los errores: si se devuelve un código HTTP correspondiente a un error no se ejecutará el catch(), 
+ ya que se ha obtenido una respuesta válida, por lo que se ejecutará el then(). 
+ Sólo si hay un error de red o de otro tipo se ejecutará el catch().
+
+ https://desarrolloweb.com/articulos/fetch-ajax-javascript.html
+ https://www.digitalocean.com/community/tutorials/how-to-use-the-javascript-fetch-api-to-get-data
+https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
+https://www.todojs.com/api-fetch-el-nuevo-estandar-que-permite-hacer-llamadas-http/
+https://www.npmjs.com/package/node-fetch
+https://www.neoguias.com/fetch-javascript/
+ojo
+https://lenguajejs.com/javascript/peticiones-http/fetch/
+ ejemplo
+ https://www.codegrepper.com/code-examples/javascript/fetch+API+%2B+w3schools
+ https://newbedev.com/fetch-w3schools-code-example
+ https://www.npmjs.com/package/node-fetch
+ http://w3.unpocodetodo.info/jsblog/es6-fetch-await.php
+https://pablomonteserin.com/curso/javascript/ejemplos-api-fetch/
+
+Alias: sobre nombres por ejemplo -> option 's' => alias 'stats'
+
+metodo .map(): 
+
+https://arepa.dev/entendiendo-map-en-javascript/
+
+ejemplos:
+https://dev.to/duxtech/las-bondades-del-metodo-map-en-javascript-4bo1

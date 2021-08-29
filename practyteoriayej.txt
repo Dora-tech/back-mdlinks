@@ -114,3 +114,79 @@ https://arepa.dev/entendiendo-map-en-javascript/
 
 ejemplos:
 https://dev.to/duxtech/las-bondades-del-metodo-map-en-javascript-4bo1
+
+======================================================
+
+_________________________cli.js__________________________________
+
+forEach: 
+
+forEach() ejecuta la función callback una vez por cada elemento del array; a diferencia de map() o reduce()
+ este siempre devuelve el valor undefined y no es encadenable. 
+El típico uso es ejecutar los efectos secundarios al final de la cadena.
+
+El forEach()método ejecuta una función proporcionada una vez para cada elemento de la matriz.
+Ejemplo: Array.forEach()
+const array1 = ['a', 'b', 'c'];
+
+array1.forEach(element => console.log(element));
+resultado
+// expected output: "a"
+// expected output: "b"
+// expected output: "c"
+
+bucle for
+Un bucle for se compone de una variable que actúa como contador que funcionará como el inicio y finalización de la instrucción. En JavaScript, es el iterador más básico; donde crea un bucle que consiste en tres expresiones encerradas en paréntesis ‘()’ y separadas por puntos y comas ‘;’, seguida de una sentencia ejecutada.
+ejemplo
+for(let i=0; i<5; i++){
+    console.log('Hola: ' + i);
+}
+resultado
+//output: Hola: 1
+//output: Hola: 2
+//output: Hola: 3
+//output: Hola: 4
+//output: Hola: 5
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach
+https://ifgeekthen.everis.com/es/bucles-usando-foreach-en-javascript
+http://lineadecodigo.com/javascript/bucle-foreach-en-javascript/
+https://codingpotions.com/javascript-foreach-bucles
+https://www.anerbarrena.com/javascript-foreach-9197/
+_____________________________ api.js_________________________________
+
+new Promise
+
+Promise.all
+
+extname
+//path.extname () devuelve la extensión del path,
+ desde la última aparición del carácter .(punto)  (ejemplo .js , .txt)
+
+push
+Añadir de un arreglo..
+El método push() añade uno o más elementos al final de un array y 
+devuelve la nueva longitud del array.
+ejemplo
+const animals = ['pigs', 'goats', 'sheep'];
+
+const count = animals.push('cows');
+console.log(count);
+// expected output: 4
+console.log(animals);
+// expected output: Array ["pigs", "goats", "sheep", "cows"]
+
+animals.push('chickens', 'cats', 'dogs');
+console.log(animals);
+// expected output: Array ["pigs", "goats", "sheep", "cows", "chickens", "cats", "dogs"]
+
+filter
+
+ 
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push
+https://www.freecodecamp.org/espanol/news/como-agregar-elementos-a-un-arreglo/
+https://devcode.la/tutoriales/javascript-array-stack/
+https://www.aprenderaprogramar.com/index.php?option=com_content&view=article&id=834:funciones-arrays-javascript-push-sort-ordenar-numeros-concat-join-pop-shift-slice-splice-etc-cu01153e&catid=78:tutorial-basico-programador-web-javascript-desde-&Itemid=206
+ojo
+http://www.es.w3ki.com/javascript/array_push.html
+________________________________index.js_______________________________

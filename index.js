@@ -177,7 +177,7 @@ let buscarLinksAndTexts=(data)=>{
   .then((res)=>console.log(res))
   .catch((err)=>console.log(err)) */
 
-/* checkruta("https://facebooooookkkkk.com//dorina//wilson")
+/* checkruta("https://facebooooookkkkk.com//manzana//naranja")
   .then((res)=>console.log(res)) */
 
  // console.log(getAllFiles("D:\\Laboratoria\\dorina\\LIM015-md-links\\directoriotest"))

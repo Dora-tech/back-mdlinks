@@ -6,10 +6,12 @@ const {
 } = require('./index.js');
 
 const path = require('path') ;
+
 const mdLinks = (path1, options) => new Promise((resolve, reject) => {
   checkRutaAndFile(isAbsolute(path1))
     .then((res) => {
       if (res[0])
+      //path.extname () devuelve la extensión del path, desde la última aparición del carácter .(punto)  (ejemplo .js , .txt)
         if (path.extname(res[1]) === ".md") {
           LeerArchivo(res[1], options)
             .then((res) => {

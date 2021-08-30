@@ -57,9 +57,9 @@ mdLinks("./some/dir")
 #### Obtener archivos
 `md-links <path-to-file>`
 
-   ![img](com1_sin_opt.png)
-
 Ejemplo
+
+ ![img](com1_sin_opt.png)
 
 ##### Opciones: 
 **--validate**

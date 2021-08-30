@@ -162,34 +162,34 @@ console.log(isAbsolute("patolucas")) */
 //validate false y stats false
 
 
-/* LeerArchivo("D:\\Laboratoria\\dorina\\LIM015-md-links\\mimd.md",{validate:false,stats:false})
+/* LeerArchivo("D:\\Laboratoria\\proyecto_lab3\\LIM015-md-links\\mimd.md",{validate:false,stats:false})
   .then((res)=>console.log(res))
   .catch((err)=>console.log(err)) */
 //----
   //validate false y stats true
-/* LeerArchivo("D:\\Laboratoria\\dorina\\LIM015-md-links\\mimd.md",{validate:false,stats:true})
+/* LeerArchivo("D:\\Laboratoria\\proyecto_lab3\\LIM015-md-links\\mimd.md",{validate:false,stats:true})
   .then((res)=>console.log(res))
   .catch((err)=>console.log(err)) */
 
     //validate true y stats false
-/* LeerArchivo("D:\\Laboratoria\\dorina\\LIM015-md-links\\mimd.md",{validate:true,stats:false})
+/* LeerArchivo("D:\\Laboratoria\\proyecto_lab3\\LIM015-md-links\\mimd.md",{validate:true,stats:false})
   .then((res)=>console.log(res))
   .catch((err)=>console.log(err)) */
 
       //validate true y stats true
-/* LeerArchivo("D:\\Laboratoria\\dorina\\LIM015-md-links\\mimd.md",{validate:true,stats:true})
+/* LeerArchivo("D:\\Laboratoria\\proyecto_lab3\\LIM015-md-links\\mimd.md",{validate:true,stats:true})
   .then((res)=>console.log(res))
   .catch((err)=>console.log(err)) */
 
-/*   LeerArchivo("D:\\Laboratoria\\dorina\\LIM015-md-links\\patolucas.md",{validate:true,stats:true})
+/*   LeerArchivo("D:\\Laboratoria\\proyecto_lab3\\LIM015-md-links\\patolucas.md",{validate:true,stats:true})
   .then((res)=>console.log(res))
   .catch((err)=>console.log(err)) */
 
-/*     LeerArchivo("D:\\Laboratoria\\dorina\\LIM015-md-links\\mimd.md",{validate:true,stats:false})
+/*     LeerArchivo("D:\\Laboratoria\\proyecto_lab3\\LIM015-md-links\\mimd.md",{validate:true,stats:false})
   .then((res)=>console.log(res))
   .catch((err)=>console.log(err)) */
 
-/*       LeerArchivo("D:\\Laboratoria\\dorina\\LIM015-md-links\\api.js",{validate:true,stats:false})
+/*       LeerArchivo("D:\\Laboratoria\\proyecto_lab3\\LIM015-md-links\\api.js",{validate:true,stats:false})
   .then((res)=>console.log(res))
   .catch((err)=>console.log(err)) */
 
@@ -202,7 +202,7 @@ console.log(isAbsolute("patolucas")) */
 /*     checkruta("https://www.google.com/dorina/dora")
   .then((res)=>console.log(res))  */
 
-//console.log(getAllFiles("D:\\Laboratoria\\dorina\\LIM015-md-links\\directoriotest"))
+//console.log(getAllFiles("D:\\Laboratoria\\proyecto_lab3\\LIM015-md-links\\directoriotest"))
 ////
 
 

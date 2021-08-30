@@ -43,13 +43,13 @@ const mdLinks = (path1, options) => new Promise((resolve, reject) => {
     .then((res)=>console.log(res))
     .catch((error)=>console.log(error)) */
 
-/* mdLinks("D:\\Laboratoria\\dorina\\LIM015-md-links\\mimd.md",{validate:false, stats:false})
+/* mdLinks("D:\\Laboratoria\\proyecto_lab3\\LIM015-md-links\\mimd.md",{validate:false, stats:false})
     .then((res)=>console.log(res))
     .catch((error)=>console.log(error)) */
-/* mdLinks("D:\\Laboratoria\\dorina\\LIM015-md-links\\index.js",{validate:false, stats:false})
+/* mdLinks("D:\\Laboratoria\\proyecto_lab3\\LIM015-md-links\\index.js",{validate:false, stats:false})
     .then((res)=>console.log(res))
     .catch((error)=>console.log(error)) */
-/*  mdLinks("D:\\Laboratoria\\dorina\\LIM015-md-links\\patolucas",{validate:false, stats:false})
+/*  mdLinks("D:\\Laboratoria\\proyecto_lab3\\LIM015-md-links\\patolucas",{validate:false, stats:false})
     .then((res)=>console.log(res))
     .catch((error)=>console.log(error))  */
 

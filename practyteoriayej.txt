@@ -163,6 +163,20 @@ extname
 //path.extname () devuelve la extensión del path,
  desde la última aparición del carácter .(punto)  (ejemplo .js , .txt)
 
+SET: 
+El objeto Set permite almacenar valores únicos de cualquier tipo, incluso valores primitivos u referencias a objetos.
+(QUE NO SE REPITE )
+
+un Set de datos es una colección de valores únicos en Javascript
+
+
+OJO
+https://www.etnassoft.com/2016/09/13/el-objeto-set-en-javascript-los-nuevos-arrays-en-es6-teoria-ejemplos-y-rendimiento-comparado/
+
+https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Set
+https://medium.com/laboratoria-developers/sets-en-javascript-3388920f7cea
+
+
 push
 Añadir de un arreglo..
 El método push() añade uno o más elementos al final de un array y 
@@ -180,7 +194,7 @@ animals.push('chickens', 'cats', 'dogs');
 console.log(animals);
 // expected output: Array ["pigs", "goats", "sheep", "cows", "chickens", "cats", "dogs"]
 
-filter
+filter:
 
  
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push

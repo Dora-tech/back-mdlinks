@@ -54,8 +54,37 @@ mdLinks("./some/dir")
   .catch(console.error);
 ```
 ### 6. Uso del CLI :
+#### Obtener archivos
+`md-links <path-to-file>`
 
+   ![img](com1_sin_opt.png)
 
+Ejemplo
+
+##### Opciones: 
+**--validate**
+
+`md-links <path-to-file> --validate`
+
+Ejemplo
+
+![img](--validate.png)
+
+**--stats**
+
+`md-links <path-to-file> --stats`
+
+Ejemplo
+
+![img](--stats.png)
+
+**--stats and --validate**
+
+`md-links <path-to-file> --stats --validate`
+
+Ejemplo
+
+![img](--statsy--validate.png)
 
 ## Objetivos de aprendizaje
 Recuerda colocar en esta seccion los objetivos de aprendizaje que quedaron pendientes de tu proyecto anterior.
@@ -83,7 +112,7 @@ Recuerda colocar en esta seccion los objetivos de aprendizaje que quedaron pendi
 
 ### Testing
 - [x] Testeo de tus funciones
-- [x]] Testeo asíncrono
+- [x] Testeo asíncrono
 
 ### Git y Github
 - [x] Uso de comandos de git (add | commit | pull | status | push).

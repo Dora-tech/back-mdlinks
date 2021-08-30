@@ -2,8 +2,22 @@
   "name": "md-links",
   "version": "0.1.0",
   "dependencies": {
-    "fetch": "^1.1.0",
-    "node-fetch": "^2.6.1",
-    "yargs": "^17.1.0"
+    "node-fetch": "^2.6.1"
+  },
+  "bin": {
+    "md-links": "cli.js"
+  },
+  "scripts": {
+    "test": "jest --verbose --coverage",
+    "start": "node cli mimd.md",
+    "dora": "node cli mimd.md --status --validate",
+    "dorita": "node cli directoriotest"
+  },
+  "main": "api.js",
+  "author": "dora elizabeth",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "jest": "^27.1.0"
   }
 }

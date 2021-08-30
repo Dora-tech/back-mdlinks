@@ -1,4 +1,5 @@
-const mdLinks = require('./api.js');
+#!/usr/bin/env node
+const mdLinks = require("./api.js");
 ///// Con Yarg
 /* const argumento =  require('yargs') 
                     .option('s',{
@@ -18,10 +19,10 @@ options.validate = argumento.validate
 let path=argumento._[0] */
 //ejemp  _: ['mimd.md'] posicion es 0 
 ///Con Process
-let argumento= process.argv
+let argumento= process.argv;
 let options={};
-options.stats = process.argv.includes("--stats")
-options.validate = process.argv.includes("--validate")
+options.stats = process.argv.includes("--stats");
+options.validate = process.argv.includes("--validate");
 let path=argumento[2];
 /////
 //console.log(options)
@@ -31,9 +32,9 @@ if(!(options.stats||options.validate))
       .then((links) => {
        // console.log(links);
         // => [{ href, text, file }, ...]
-        links.forEach((link)=>link.href.forEach((element,index)=>{
-          console.log(link.file, element, link.text[index])
-        }))
+        links.forEach((link)=>link.href.forEach((href,index)=>{
+          console.log(link.file, href, link.text[index]);
+        }));
         //////
       //console.log(links)
 
@@ -46,9 +47,9 @@ else if(!options.validate && options.stats)
     let Total=0;
     let unique=0;
     links.forEach((link)=>{
-      Total+=link.total
-      unique+=link.unique
-    })
+      Total+=link.total;
+      unique+=link.unique;
+    });
     console.log("Total", Total);
     console.log("unique", unique);
 //////
@@ -60,9 +61,9 @@ else if(options.validate && !options.stats)
 {
   mdLinks(path,options)
   .then((links) => {
-    links.forEach((link)=>link.href.forEach((element,index)=>{
-      console.log(link.file, element, link.text[index], link.status[index],link.ok[index])
-    }))
+    links.forEach((link)=>link.href.forEach((href,index)=>{
+      console.log(link.file, href, link.text[index], link.status[index],link.ok[index]);
+    }));
     ///
     //console.log(links)
   })
@@ -75,10 +76,10 @@ else{
     let unique=0;
     let broken=0;
     links.forEach((link)=>{
-      Total+=link.total
-      unique+=link.unique
-      broken+=link.broken
-    })
+      Total+=link.total;
+      unique+=link.unique;
+      broken+=link.broken;
+    });
     console.log("Total", Total);
     console.log("unique", unique);
     console.log("broken", broken);
